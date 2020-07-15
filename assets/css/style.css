@@ -68,9 +68,21 @@ header{
 
 
 @media (max-width: 476px){
+    .btn{
+        padding: 20px auto;
+        height: 64px;
+        font-size: 18px;
+    }
+    
+    .btn-secondary{
+        background: white;
+        color: #2C2C27;
+    }
+
     header{
         background: url("../../assets/img/Rectangle\ 2.png") no-repeat center center/cover;
         height: 705px;
+        overflow: hidden;
     }
 
     .hero-column{
