@@ -13,9 +13,16 @@
 }
 
 .btn{
-    padding: 18px auto;
-    height: 64px;
+    padding: 10px 20px;
     font-size: 24px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    font-size: 24px;
+    background: #2C2C27;
+    color: #CCB77A;
 }
 
 .btn-secondary{
@@ -23,8 +30,17 @@
     color: #2C2C27;
 }
 
+.mt-6{
+    margin-top: 6rem;
+}
 
-html, body{
+.subtle-text{
+    transform: rotate(-90deg);
+}
+
+
+body{
+    position: relative;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -33,6 +49,12 @@ header{
     height: 964px;
     padding-top: 40px;
 }
+
+main{
+    overflow: hidden !important;
+}
+
+h3{font-size: 36px;}
 
 .logo{
     color: white;
@@ -62,7 +84,7 @@ header{
 
 .outline-head-text{
     color: transparent;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 1px black;
 }
 
 .hero-paragraph{
@@ -70,12 +92,26 @@ header{
     line-height: 28px;
 }
 
-.hero-column button{
-    margin-top: 34px;
+.hero-column .btn{
+    margin-top: 20px !important;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
 }
 
+
 /* HOW IT WORKS */
-#how-it-work .text h1{
+#how-it-works .bg-img{
+    position: absolute;
+    width: 212px;
+    height: 390px;
+    left: 1220px;
+    top: 1282px;
+    overflow: hidden !important;
+}
+
+#how-it-works .text h1{
     display: inline-block;
     background: #2C2C27;
     padding: 34px 50px;
@@ -103,8 +139,122 @@ header{
     width: 360px;
 }
 
+#features .watch-trailers .bg-img{
+    position: absolute;
+    width: 212px;
+    height: 390px;
+    left: -68px;
+    top: 2200px;    
+}
 
-@media (max-width: 476px){
+#features .book-seat .bg-img{
+    position: absolute;
+    width: 212px;
+    height: 390px;
+    left: 1238px;
+    top: 2819px;   
+}
+
+#features .get-reminded .bg-img{
+    position: absolute;
+    width: 212px;
+    height: 390px;
+    left: -73px;
+    top: 3548px;
+}
+
+/* NEWSLETTER */
+#newsletter{
+    overflow: hidden;
+}
+
+form input{
+    margin: 0 5px;
+}
+
+#newsletter form input[type=text]{
+    width: 50%;
+    padding: 18px 30px;
+    border: #CCB77A solid 2px;
+    border-radius: 10px;
+}
+
+#newsletter form input::placeholder{
+    font-size: 24px;
+}
+
+#newsletter form input[type=text]:focus{
+    box-shadow: rgba(44, 44, 39, 0.255);
+    border: rgba(44, 44, 39, 0.255);
+    border-radius: 10px;
+}
+
+#newsletter form input[type=submit]{
+    padding: 20px 50px;
+    background: #CCB77A;
+    color: black;
+    border: #CCB77A solid 2px;
+    border-radius: 10px;
+}
+
+#newsletter form input[type=submit]:hover{
+    background: #2C2C27;
+    color: #CCB77A;
+    border: none;
+}
+
+#newsletter img{
+    width: 100%;
+}
+
+/* WATCH VIDEO  */
+#watch-video iframe{
+    border: none;
+}
+
+
+/* FOOTER */
+#footer{
+    background: #010103;
+    color: white;
+    padding: 50px;
+    text-align: left !important;
+}
+
+#footer .logo{
+    margin-left: 10%;
+    font-size: 24px;
+    text-align: left !important;
+    color: #CCB77A !important;
+}
+
+#footer .footer-links{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#footer .nav-header{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#footer .nav-item .nav-link{
+    color: white;
+}
+
+#footer .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#footer .footer-text{
+    color: #888888;
+}
+
+/* MOBILE  */
+@media (max-width: 376px){
     .btn{
         padding: 20px auto;
         height: 64px;
@@ -130,10 +280,6 @@ header{
         margin-left: 2%;
     }
 
-    /* .hero-column > h1, .hero-column > p, .hero-column > button{
-        margin-top: -34px;
-    } */
-    
     .hero-text{
         color: white;
         font-size: 36px;
