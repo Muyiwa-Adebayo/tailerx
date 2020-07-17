@@ -50,6 +50,12 @@ header{
     padding-top: 40px;
 }
 
+@media (min-width: 769px){
+    header .nav-item{
+        display: none;
+    }
+}
+
 main{
     overflow: hidden !important;
 }
@@ -100,13 +106,12 @@ h3{font-size: 36px;}
     justify-content: center;
 }
 
-
 /* HOW IT WORKS */
 #how-it-works .bg-img{
     position: absolute;
     width: 300px;
     height: 390px;
-    left: 1220px !important;
+    left: 1420px;
     top: 1282px;
     overflow: hidden !important;
 }
@@ -131,7 +136,6 @@ h3{font-size: 36px;}
 #feature-text{
     display: flex;
     flex-direction: column;
-    /* align-content: center; */
     justify-content: center;
 }
 
@@ -255,6 +259,20 @@ form input{
 
 /* MOBILE  */
 @media (max-width: 376px){
+    header nav{
+        position: sticky;
+    }
+    
+    .navbar-collapse{
+        background: #CCB77A;
+        color: #010103 !important;
+        padding: 10px 10px;
+    }
+
+    header .navbar-nav img{
+        display: none;
+    }
+
     .btn{
         padding: 20px auto;
         height: 64px;
